@@ -1,0 +1,275 @@
+body,html {
+    font-family: "Marck Script", cursive;
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+.pimg {
+    background-image: url('./css/1stpagebg.jpg' );
+    min-height: 100vh; /* Full viewport height */
+    width:100%;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-attachment: fixed; /* Creates the slow-moving parallax effect */
+    display: flex;    
+    flex-wrap:wrap;      
+    flex-direction:column;
+    justify-content: center;  
+    align-items: center;
+    flex: 0 1 100px;
+    color:white;
+    font-size: clamp(0.5rem, 1.4vw, 1.7rem);
+}
+
+.borderm{
+    font-weight:bold;
+    text-align:center;
+    width: 70%; 
+    max-width: 600px; 
+    padding: 1px;
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 10px;
+    padding:0;
+    margin:0;
+ }
+.text-container {
+    display: flex;          
+    flex-direction:column;
+    justify-content: center;  
+    align-items: center;
+    padding:0;
+    margin:0;
+}
+.text-container h2,p{
+    margin:0;
+    padding:0;
+    line-height:1;
+}
+.text-container p{
+    font-size: clamp(2rem, 3vw, 3.5rem);
+}
+section{
+    text-align:center;
+}
+section h2,p,.wh,.day{
+    margin:0;
+    line-height:1.4;
+    padding:3px;
+}
+section p{
+    font-size: clamp(1rem, 2vw, 1.3rem);
+}
+section h2{
+    color:rgb(10, 37, 117);
+}
+section button{
+    background-color:rgb(190, 9, 9);
+    padding:8px;
+    margin: 10px;
+    color:white;
+    font-weight:bold;
+    border:none;
+    border-radius:8px;
+    transition: all 0.2s ease-in-out;
+}
+section button:hover{
+    opacity:0.7;
+    transform:translateY(15%);
+}
+.parallax-section {
+    background-image: url('./css/2ndimg.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 115vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.animal-container {
+    display: flex;
+    gap: 50px;
+    position: relative;
+}
+.animal {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.animal img {
+    width: 150px; 
+    border-radius: 70px;
+    opacity: 0.8; 
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.animal:hover img {
+    opacity: 1; 
+    transform: scale(1.1); 
+}
+
+.status {
+    font-size: 18px;
+    text-align:center;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    border-radius: 5px;
+    color:rgb(159, 238, 184);
+}
+
+.info {
+    position: relative;
+    bottom: -50px; 
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 14px;
+    max-width: 500px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s, bottom 0.3s ease-in-out;
+}
+
+.animal:hover .info {
+    opacity: 1;
+    bottom: -80px; 
+}
+.pimg2{
+    background-size:cover;    
+    background-attachment:fixed;
+    background-position: center;
+    height:100vh;
+    animation-name:ex;
+    animation:ex 15s ease-in-out infinite;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    animation-timing-function: linear;
+}
+.sec{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    width: 80%;
+    text-align: center;
+    line-height: 1.4;
+    padding: 3px;
+    margin:0;
+    gap:1px;
+    opacity:0;
+    color:white;
+    animation-name:ex1;
+    animation:ex1 3s ease-in-out 1 forwards;
+    animation-delay:0.15s;
+    animation-timing-function: linear;
+}
+@keyframes ex{
+    0%{
+        background-image:url('./css/2-1img.jpg');
+    }
+    20%{
+        
+        background-image:url('./css/2-2img.jpg');
+    }
+    37%{
+        background-image:url('./css/auuadest.jpg');
+    }
+   
+    57%{
+        background-image:url('./css/2-4img.jpg')
+    }
+    65%{
+        background-image:url('./css/2-5img.jpg');
+        
+
+    }
+    80%{
+        background-image:url('./css/2-6img.jpg');
+    }
+    100%{
+        background-image:url('./css/lungs.jpg');
+    }
+}
+@keyframes ex1{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+.wh main{
+        font-size: clamp(1rem, 2vw, 1.3rem);
+}
+.help{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    flex:0 1 30px;
+    background-image:url('./css/bgtiger');
+    background-attachment:fixed;
+    background-size:cover;
+    height:100vh;    
+}
+.step1 img{
+    height:200px;
+    width:200px;
+    border-radius:100px;
+}
+.help2{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    align-items:center;
+    position:relative;
+    gap:50px;
+}
+.step1 img,p{
+    margin:0;
+    padding:2px;
+    text-align:center;
+    color:white;
+}
+.day h3,p{
+    color:black;
+}
+.day button{
+    background-color:green;
+    padding:8px;
+    margin: 5px;
+    color:white;
+    font-weight:bold;
+    border:none;
+    border-radius:8px;
+    transition: all 0.2s ease-in-out;
+}
+.step1 p{
+        color:floralwhite;
+        font-size: clamp(1rem, 2vw, 1.3rem);
+}
+.last{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:70px;
+}
+.ab{
+        height:35px;
+}
+.pimg4{
+    background-image:url('./css/mapbg2');
+    background-size:cover;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    min-height:115vh;
+}
