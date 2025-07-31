@@ -1,3 +1,0 @@
-u[]=bcdanmxncjajdkjkd
-a[] to store output
-for loop:until a met store it in b[],if met, store b[] to a[]
